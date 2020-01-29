@@ -1,4 +1,4 @@
-Welcome to Glitch
+Kranki-Logo
 =================
 
 Krankikom-Logo mit svg + css3 :3
