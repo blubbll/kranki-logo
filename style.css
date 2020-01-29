@@ -11,6 +11,7 @@ wrap {
   align-items: center;
   justify-content: center;
   flex: 1;
+  margin-right: 3rem;
 }
 
 logo svg {
