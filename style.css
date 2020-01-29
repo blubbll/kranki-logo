@@ -1,0 +1,47 @@
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+wrap {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+logo svg {
+  animation: hue-rotate 3s linear infinite;
+  width: 25vw;
+}
+
+logo path {
+  fill: rgb(185, 0, 0);
+}
+
+span {
+  font-size: 12vw;
+  font-weight: bold;
+}
+
+footer {
+  flex: 1;
+  text-align: center;
+}
+
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
