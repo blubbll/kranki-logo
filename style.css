@@ -11,7 +11,14 @@ wrap {
   align-items: center;
   justify-content: center;
   flex: 1;
-  margin-right: 5rem;
+  flex-direction: column;
+}
+
+logo {
+  margin-right: 5vw;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
 }
 
 logo svg {
@@ -23,14 +30,15 @@ logo path {
   fill: rgb(185, 0, 0);
 }
 
-span {
+logo span {
   font-size: 12vw;
   font-weight: bold;
 }
 
 footer {
-  flex: 1;
   text-align: center;
+  margin-top: auto;
+  padding-bottom: 1rem;
 }
 
 @keyframes hue-rotate {
