@@ -21,18 +21,18 @@ logo {
   align-items: center;
 }
 
+logo span {
+  font-size: 12vw;
+  font-weight: bold;
+  color: #262626;
+}
+
 logo svg {
-  animation: hue-rotate 3s linear infinite;
   width: 25vw;
 }
 
 logo path {
-  fill: rgb(185, 0, 0);
-}
-
-logo span {
-  font-size: 12vw;
-  font-weight: bold;
+  animation: glow 3s linear infinite;
 }
 
 footer {
@@ -41,17 +41,21 @@ footer {
   padding-bottom: 1rem;
 }
 
-@keyframes hue-rotate {
-  from {
-    -webkit-filter: hue-rotate(0);
-    -moz-filter: hue-rotate(0);
-    -ms-filter: hue-rotate(0);
-    filter: hue-rotate(0);
+/* blau, lila, rot, gelb, cyan, blau(x)) */
+@keyframes glow {
+  0% {
+    fill: #5ab5ff;
   }
-  to {
-    -webkit-filter: hue-rotate(360deg);
-    -moz-filter: hue-rotate(360deg);
-    -ms-filter: hue-rotate(360deg);
-    filter: hue-rotate(360deg);
+  25% {
+    fill: #430392;
+  }
+  50% {
+    fill: #a50000;
+  }
+  75% {
+    fill: #efa305;
+  }
+  100% {
+    fill: #2cdba6;
   }
 }
